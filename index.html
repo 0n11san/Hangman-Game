@@ -2,18 +2,20 @@
   <head>   
     <meta charset="UTF-8">   
     <title> Hangman </title> 
-  </head> 
-  
-    <p>Press Any Key to Get Started!</p>
-    <p>Wins</p>
-    <p>Current Word: </p>
-    <p>Number of Guesses Remaining: </p>
-    <p>Letters Already Guessed: </p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     
+  </head> 
+    <div class="container">
+      <p>Press Any Key to Get Started!</p>
+      <p>Wins</p>
+      <p>Current Word: </p>
+      <p>Number of Guesses Remaining: </p>
+      <p>Letters Already Guessed: </p>
+    </div>
   <body>   
     <script type="text/javascript">
       //set an array of words
-      var words = ["dragon", "throne", "chaos", "fire", "khaleesi", "winter"]
+      var words = ["dragon", "throne", "chaos", "fire", "khaleesi", "winter", "whitewalker", "direwolf", "tyrion", "knight"]
       //set an array of all letters in alphabet
       var letters = ["a", "b", "c", "d", "e", "f", "g",
                      "h", "i" ,"j", "k", "l" ,"m", "n", "o", "p", 

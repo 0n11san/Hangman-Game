@@ -1,60 +1,28 @@
-<html lang="en-us"> 
-  <head>   
-    <meta charset="UTF-8">   
-    <title> Hangman </title> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    
-  </head> 
-    <div class="container">
-      //inform user to press any key to get started
+<html lang="en-us">
 
-      <p>Press Any Key to Get Started!</p>
-      <p>Wins</p>
-      <p>Current Word: </p>
-      <p>Number of Guesses Remaining: </p>
-      <p>Letters Already Guessed: </p>
-    </div>
-  <body>   
-    <script type="text/javascript">
-      //set an array of words
-      var words = ["dragon", "throne", "chaos", "fire", "khaleesi", "winter", "whitewalker", "direwolf", "tyrion", "knight"]
-      //set an array of all letters in alphabet
-      var letters = ["a", "b", "c", "d", "e", "f", "g",
-                     "h", "i" ,"j", "k", "l" ,"m", "n", "o", "p", 
-                     "q", "r", "s" ,"t", "u","v", "w", "x" ,"y", "z"]
-      
-      /*behind the scenes, game randomly selects a word from an array of words that fit a specific theme (Game of Thrones)
-      game sets this word to a variable named "secret_word"*/
-      
-      //game then displays empty slots representing each letter in chosen word
-      
-      /*set number of guesses remaining equal to length of word + 3;
-      display this counter throughout game and decriment according to loop defined below*/ 
-      
-      /*=============begin loop=================
+<head>
+  <meta charset="UTF-8">
+  <title> Hangman </title>
 
-        user presses a letter key
+  <!-- link to Bootsrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-        if letter is in word, game replaces empty slot(s) that contain said 
+  <!-- link to javascript file -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
-        letter and reduces number of guesses remaining by 1
+</head>
+<div class="container">
+  <!-- inform user to press any key to get started -->
 
-        else if letter it NOT in word, game add letter to list of "Letters 
+  <p>Press Any Key to Get Started!</p>
+  <p>Wins: </p>
+  <p>Current Word: </p>
+  <p>Number of Guesses Remaining: </p>
+  <p>Letters Already Guessed: </p>
+</div>
 
-        Already Guessed), and then reduces number of guesses remaining by 1
+<body>
 
-        
-        (end this loop under 2 conditions: 
-        1. if user correctly guesses word (in this scenario alert "you win!"; 
-        2. if number of guesses remaining is reduced to 0 && in this scenario alert: sorry, you lose!)
-        
-        ===============end loop=======================*/
-      
-      //test
-                      alert(letters[5]);
-                      alert(letters[0]);
-                      alert(letters[letters.length-2]);
-    </script> 
-  </body> 
+</body>
+
 </html>
-
